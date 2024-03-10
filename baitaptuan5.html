@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Create product list with CSS3</title>
+<style type="text/css">
+.ProductDetails {display: none;}
+.Product img {
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgb(82, 82, 82);
+}
+.Productname {font-weight: bold;}
+.productclass {font-style: italic;}
+.productclass: ::before {content: " - "}
+.Product {
+    text-align: center;
+    width: 15px;
+    margin: 0px 20px;
+    float: left;
+    cursor: pointer;
+}
+.Product:hover .ProductDetails {display: block;}
+</style>
+</head>
+<body>
+<div>
+    <div class="product">
+        <img src="duongnguyetha.jpg" />
+        <div class="ProductDetails">
+            <span class="Productname">Dương Nguyệt Hà</span>
+            <span class="productproce">FDB</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
